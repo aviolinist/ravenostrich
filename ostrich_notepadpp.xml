@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NotepadPlus>
+  <UserLang name="Ostrich-RAVEN" ext="ost txt tpl rvp rvh rvi rvt" udlVersion="2.1">
+
+    <Settings>
+      <Global caseIgnored="yes" allowFoldOfComments="yes"/>
+    </Settings>
+
+    <CommentStyles>
+      <CommentLine value="#"/>
+    </CommentStyles>
+
+    <KeywordLists>
+
+      <!-- Block structure -->
+      <Keywords name="Keywords1">
+BeginExtraDirs EndExtraDirs
+BeginFilePairs EndFilePairs
+BeginParams EndParams
+BeginResponseVars EndResponseVars
+BeginTiedRespVars EndTiedRespVars
+BeginGCOP EndGCOP
+BeginConstraints EndConstraints
+BeginDDSAlg EndDDSAlg
+BeginParallelDDSAlg EndParallelDDSAlg
+BeginPADDS EndPADDS
+      </Keywords>
+
+      <!-- Core control fields -->
+      <Keywords name="Keywords2">
+ProgramType ObjectiveFunction
+ModelExecutable PreserveBestModel
+ModelSubdir RandomSeed
+PerturbationValue MaxIterations
+UseRandomParamValues UseInitialParamValues
+SelectionMetric CostFunction PenaltyFunction
+UseOpt
+      </Keywords>
+
+      <!-- Algorithm types -->
+      <Keywords name="Keywords3">
+DDS ParallelDDS PADDS GCOP
+      </Keywords>
+
+      <!-- Common tokens -->
+      <Keywords name="Keywords4">
+random none OST_NULL wsum yes no standard
+      </Keywords>
+
+      <!-- Raven template commands (colon-prefixed) -->
+      <Keywords name="Keywords5">
+:AdiabaticLapseRate :AirSnowCoeff :Attributes :AvgAnnualRunoff :AvgAnnualSnow
+:Bedslope :ChannelProfile :EndChannelProfile
+:LandUseClasses :EndLandUseClasses :LandUseParameterList :EndLandUseParameterList
+:RoughnessZones :EndRoughnessZones
+:SeasonalCanopyLAI :EndSeasonalCanopyLAI
+:SnowParameterList :EndSnowParams
+:SoilClasses :EndSoilClasses :SoilProfiles :EndSoilProfiles
+:SoilParameterList :EndSoilParameterList
+:SurveyPoints :EndSurveyPoints
+:Units :Parameters
+:VegetationClasses :EndVegetationClasses :VegetationParameterList :EndVegetationParameterList
+:PrecipitationLapseRate :RainSnowTransition :IrreducibleSnowSaturation
+      </Keywords>
+
+      <!-- Operators -->
+      <Keywords name="Operators1">
+= ; , ( ) [ ] { } + - * /
+      </Keywords>
+
+    </KeywordLists>
+
+    <Styles>
+
+      <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" fontName="Consolas"/>
+      <WordsStyle name="LINE COMMENTS" fgColor="008000"/>
+
+      <!-- Block headers -->
+      <WordsStyle name="KEYWORDS1" fgColor="0033CC" fontStyle="1"/>
+
+      <!-- Control fields -->
+      <WordsStyle name="KEYWORDS2" fgColor="800080" fontStyle="1"/>
+
+      <!-- Algorithms -->
+      <WordsStyle name="KEYWORDS3" fgColor="AA0000" fontStyle="1"/>
+
+      <!-- Literals -->
+      <WordsStyle name="KEYWORDS4" fgColor="444444"/>
+
+      <!-- Raven colon commands -->
+      <WordsStyle name="KEYWORDS5" fgColor="0055AA" fontStyle="1"/>
+
+      <!-- Operators / numbers -->
+      <WordsStyle name="OPERATORS" fgColor="666666"/>
+      <WordsStyle name="NUMBERS" fgColor="AA5500"/>
+
+    </Styles>
+
+  </UserLang>
+</NotepadPlus>
